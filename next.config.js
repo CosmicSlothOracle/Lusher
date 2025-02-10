@@ -5,7 +5,7 @@ const nextConfig = {
         domains: ['link.storjshare.io'],
         unoptimized: true, // Required for static export
     },
-    basePath: '/Lusher', // Updated to match your new repository name
+    basePath: '/Lusher'  // Matches exactly with repository name
 }
 
 module.exports = nextConfig
