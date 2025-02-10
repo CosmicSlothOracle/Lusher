@@ -1,0 +1,24 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# Next.js build output
+/.next/
+/out/
+
+# Build
+/build
+
+# Cache
+.cache/
+.next/cache/
+*.gz
+*.old
+
+# Local env files
+.env*.local
+
+# Misc
+.DS_Store
+*.pem
