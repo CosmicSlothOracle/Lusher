@@ -1,11 +1,10 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
+import type { Metadata } from 'next'
+import { Providers } from './providers'
+import '../styles/globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata = {
-    title: 'Portfolio | Creative Developer',
-    description: 'Web Development, App Development, Design & Animation',
+export const metadata: Metadata = {
+    title: 'Political Power - Strategy Card Game',
+    description: 'A strategic multiplayer card game about political power and influence',
 }
 
 export default function RootLayout({
@@ -15,8 +14,8 @@ export default function RootLayout({
 }) {
     return (
         <html lang="en">
-            <body className={`${ inter.className } bg-dark text-light`}>
-                {children}
+            <body>
+                <Providers>{children}</Providers>
             </body>
         </html>
     )
